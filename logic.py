@@ -1,7 +1,7 @@
 """
 ---------------
 FIRST RPG
-Main
+Logic
 By Ann-MarieDev
 ---------------
 """
