@@ -31,18 +31,42 @@ class weapon:
         self.weapon_class = weapon_class
         
 #Clothes/Armor Class
-class weapon:
-    def __init__(self, name, defense, weight, type, color):
+class clothes:
+    def __init__(self, name, defense, weight, armor_class, color):
         self.name = name
         self.defense = defense
         self.weight = weight
-        self.type = type
+        self.armor_class = armor_class
         self.color = color
         
 #Inventory Class
 class inventory:
     def __init__(self) -> None:
         pass
+
+#---------------VARIABLES---------------
+"""
+Weapon classes:
+- Worst
+- Bad
+- Good
+- Best
+- Legendary
+"""
+worst_weapon = "WEAPON CLASS: Worst"
+bad_weapon = "WEAPON CLASS: Bad"
+good_weapon = "WEAPON CLASS: Good"
+best_weapon = "WEAPON CLASS: Best"
+legendary_weapon = "WEAPON CLASS: Legendary"
+
+"""
+Clothing/Armor classes:
+- Worst
+- Bad
+- Good
+- Best
+- Legendary
+"""
 
 #---------------CHARACTERS---------------
 #--Main Characters--
@@ -56,50 +80,43 @@ main_char_two = character("Orlando", 17, 100, 5, "brown", "tan", "brown")
 enemy_one = character("Alice", 17, 100, 5, "blonde", "pale", "blue")
 
 #--Side Characters/NPC's--
-#---------------VARIABLES---------------
-"""
-Weapon classes:
-- Worst
-- Bad
-- Good
-- Best
-- Legendary
-"""
-worst = "WEAPON CLASS: Worst"
-bad = "WEAPON CLASS: Bad"
-good = "WEAPON CLASS: Good"
-best = "WEAPON CLASS: Best"
-legendary = "WEAPON CLASS: Legendary"
 
 #---------------WEAPONS---------------
 #Copy n paste: weapon("",,,),
 #weapon(Name,  Damage, Weight,  Weapon Class),
 weapons = [
     #---------------Worst---------------
-    weapon("Baloon Sword", 0.5, 0.2, worst),
-    weapon("Plastic Sword", 1, 0.5, worst),
-    weapon("Clown Hammer", 0.5, 1, worst),
-    weapon("Broken Pencil", 0, 0.1, worst),
+    weapon("Baloon Sword", 0.5, 0.2, worst_weapon),
+    weapon("Plastic Sword", 1, 0.5, worst_weapon),
+    weapon("Clown Hammer", 0.5, 1, worst_weapon),
+    weapon("Broken Pencil", 0, 0.1, worst_weapon),
     #---------------Bad---------------
-    weapon("Sling Shot", 0, 4, bad),
-    weapon("Piñata Stick", 2, 2, bad),
-    weapon("Wooden Sword", 4, 2, bad),
-    weapon("Holy Water", 5, 1, bad),
-    weapon("Wooden Bow", 6, 2, bad),
+    weapon("Sling Shot", 0, 4, bad_weapon),
+    weapon("Piñata Stick", 2, 2, bad_weapon),
+    weapon("Wooden Sword", 4, 2, bad_weapon),
+    weapon("Holy Water", 5, 1, bad_weapon),
+    weapon("Wooden Bow", 6, 2, bad_weapon),
     #---------------Good---------------
-    weapon("Stone Sword", 7, 5, good),
-    weapon("Stone Staff", 8, 4, good),
-    weapon("Strong Bow", 10, 4, good),
-    weapon("War Hammer", 11, 6, good,),
+    weapon("Stone Sword", 7, 5, good_weapon),
+    weapon("Stone Staff", 8, 4, good_weapon),
+    weapon("Strong Bow", 10, 4, good_weapon),
+    weapon("War Hammer", 11, 6, good_weapon),
     #---------------Best---------------
-    weapon("Metal Sword", 18, 6, best),
-    weapon("Metal Bow", 18, 7, best),
-    weapon("Jumbo Hammer", 20, 15, best),
-    weapon("Katana", 20, 4, best),
+    weapon("Metal Sword", 18, 6, best_weapon),
+    weapon("Metal Bow", 18, 7, best_weapon),
+    weapon("Jumbo Hammer", 20, 15, best_weapon),
+    weapon("Katana", 20, 4, best_weapon),
     #---------------Legendary---------------
-    weapon("Legendary Sword", 40, 10, legendary),
-    weapon("Legendary Bow", 45, 10, legendary)
+    weapon("Legendary Sword", 40, 10, legendary_weapon),
+    weapon("Legendary Bow", 45, 10, legendary_weapon)
 ]
+#---------------CLOTHES/ARMOR---------------
+#Copy n paste: clothes("",,,,),
+#clothes(name, defense, weight, armor_class, color)
+clothing = [
+    clothes(),
+]
+
 
 #---------------STARTER ITEMS---------------
 
