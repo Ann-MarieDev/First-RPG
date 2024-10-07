@@ -30,7 +30,7 @@ class weapon:
         self.weight = weight
         self.weapon_class = weapon_class
         
-#Clothes/Armor
+#Clothes/Armor Class
 class weapon:
     def __init__(self, name, defense, weight, type, color):
         self.name = name
@@ -38,6 +38,11 @@ class weapon:
         self.weight = weight
         self.type = type
         self.color = color
+        
+#Inventory Class
+class inventory:
+    def __init__(self) -> None:
+        pass
 
 #---------------CHARACTERS---------------
 #--Main Characters--
@@ -78,15 +83,23 @@ weapons = [
     #---------------Bad---------------
     weapon("Sling Shot", 0, 4, bad),
     weapon("Piñata Stick", 2, 2, bad),
-    weapon("Wooden Sword", 4, 2.0, bad),
+    weapon("Wooden Sword", 4, 2, bad),
     weapon("Holy Water", 5, 1, bad),
+    weapon("Wooden Bow", 6, 2, bad),
     #---------------Good---------------
+    weapon("Stone Sword", 7, 5, good),
+    weapon("Stone Staff", 8, 4, good),
+    weapon("Strong Bow", 10, 4, good),
+    weapon("War Hammer", 11, 6, good,),
     #---------------Best---------------
+    weapon("Metal Sword", 18, 6, best),
+    weapon("Metal Bow", 18, 7, best),
+    weapon("Jumbo Hammer", 20, 15, best),
+    weapon("Katana", 20, 4, best),
     #---------------Legendary---------------
+    weapon("Legendary Sword", 40, 10, legendary),
+    weapon("Legendary Bow", 45, 10, legendary)
 ]
-
-
-
 
 #---------------STARTER ITEMS---------------
 
