@@ -1,0 +1,97 @@
+{
+    "balloon sword": {
+        "damage": 0.5,
+        "weight": 0.2,
+        "weapon_class": 0
+    },
+    "plastic sword": {
+        "damage": 1,
+        "weight": 0.5,
+        "weapon_class": 0
+    },
+    "clown hammer": {
+        "damage": 0.5,
+        "weight": 1,
+        "weapon_class": 0
+    },
+    "broken pencil": {
+        "damage": 0,
+        "weight": 0.1,
+        "weapon_class": 0
+    },
+    "sling shot": {
+        "damage": 0,
+        "weight": 4,
+        "weapon_class": 1
+    },
+    "piñata stick": {
+        "damage": 2,
+        "weight": 2,
+        "weapon_class": 1
+    },
+    "wooden sword": {
+        "damage": 4,
+        "weight": 2,
+        "weapon_class": 1
+    },
+    "holy water": {
+        "damage": 5,
+        "weight": 1,
+        "weapon_class": 1
+    },
+    "wooden bow": {
+        "damage": 6,
+        "weight": 2,
+        "weapon_class": 1
+    },
+    "stone sword": {
+        "damage": 7,
+        "weight": 5,
+        "weapon_class": 2
+    },
+    "stone staff": {
+        "damage": 8,
+        "weight": 4,
+        "weapon_class": 2
+    },
+    "strong bow": {
+        "damage": 10,
+        "weight": 4,
+        "weapon_class": 2
+    },
+    "war hammer": {
+        "damage": 11,
+        "weight": 6,
+        "weapon_class": 2
+    },
+    "metal sword": {
+        "damage": 18,
+        "weight": 6,
+        "weapon_class": 3
+    },
+    "metal bow": {
+        "damage": 18,
+        "weight": 7,
+        "weapon_class": 3
+    },
+    "jumbo hammer": {
+        "damage": 20,
+        "weight": 15,
+        "weapon_class": 3
+    },
+    "katana": {
+        "damage": 20,
+        "weight": 4,
+        "weapon_class": 3
+    },
+    "legendary sword": {
+        "damage": 40,
+        "weight": 10,
+        "weapon_class": 4
+    },
+    "legendary bow": {
+        "damage": 45,
+        "weight": 10,
+        "weapon_class": 4
+    }
+}

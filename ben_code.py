@@ -1,3 +1,5 @@
+import json
+
 """
 ---------------
 FIRST RPG
@@ -23,7 +25,7 @@ bad_weapon = "WEAPON CLASS: Bad"
 good_weapon = "WEAPON CLASS: Good"
 best_weapon = "WEAPON CLASS: Best"
 legendary_weapon = "WEAPON CLASS: Legendary"
-
+weapon_classes = [worst_weapon, bad_weapon, good_weapon, best_weapon, legendary_weapon]
 """
 Clothing/Armor classes:
 - Worst
@@ -64,9 +66,15 @@ class weapon:
         self.weight = weight
         self.weapon_class = weapon_class
         
+    def __str__(self) -> str:
+        return f"{self.name}"
+    
+    def __repr__(self) -> str:
+        return self.name
+        
 #Clothes/Armor Class
 class clothes:
-    def __init__(self, name, defense, weight, armor_class, color):
+    def __init__(self, name, defense, weight, armor_class):
         self.name = name
         self.defense = defense
         self.weight = weight
@@ -88,58 +96,46 @@ def remove_item():
 #---------------CHARACTERS---------------
 #--Main Characters--
 #Nala
-main_char = character("Nala", 16, 100, 3, "orange", "tan", "green")
+main_char = character("Nala", 16, 100, 3, "orange", "tan", "green", [])
 #Orlando
-main_char_two = character("Orlando", 17, 100, 5, "brown", "tan", "brown")
+main_char_two = character("Orlando", 17, 100, 5, "brown", "tan", "brown", [])
 
 #--Enemies--
 #Alice
-enemy_one = character("Alice", 17, 100, 5, "blonde", "pale", "blue")
+enemy_one = character("Alice", 17, 100, 5, "blonde", "pale", "blue", [])
 
 #--Side Characters/NPC's--
 
 #---------------WEAPONS---------------
 #Copy n paste: weapon("",,,),
 #weapon(Name,  Damage, Weight,  Weapon Class),
-weapons = [
-    #---------------Worst---------------
-    weapon("Baloon Sword", 0.5, 0.2, worst_weapon),
-    weapon("Plastic Sword", 1, 0.5, worst_weapon),
-    weapon("Clown Hammer", 0.5, 1, worst_weapon),
-    weapon("Broken Pencil", 0, 0.1, worst_weapon),
-    #---------------Bad---------------
-    weapon("Sling Shot", 0, 4, bad_weapon),
-    weapon("Piñata Stick", 2, 2, bad_weapon),
-    weapon("Wooden Sword", 4, 2, bad_weapon),
-    weapon("Holy Water", 5, 1, bad_weapon),
-    weapon("Wooden Bow", 6, 2, bad_weapon),
-    #---------------Good---------------
-    weapon("Stone Sword", 7, 5, good_weapon),
-    weapon("Stone Staff", 8, 4, good_weapon),
-    weapon("Strong Bow", 10, 4, good_weapon),
-    weapon("War Hammer", 11, 6, good_weapon),
-    #---------------Best---------------
-    weapon("Metal Sword", 18, 6, best_weapon),
-    weapon("Metal Bow", 18, 7, best_weapon),
-    weapon("Jumbo Hammer", 20, 15, best_weapon),
-    weapon("Katana", 20, 4, best_weapon),
-    #---------------Legendary---------------
-    weapon("Legendary Sword", 40, 10, legendary_weapon),
-    weapon("Legendary Bow", 45, 10, legendary_weapon)
-]
+# Function to load weapons from a JSON file
+weapons = []  # Initialize an empty list for weapons
+with open("weapons.json", 'r') as file:
+    data = json.load(file)  # Load the JSON data
+    
+    for weapon_name, weapon_info in data.items():
+        # Create a weapon instance using the data from the JSON
+        wclass = weapon_classes[weapon_info['weapon_class']]
+        new_weapon = weapon(
+            name=weapon_name.title(),  # Capitalize the weapon name
+            damage=weapon_info['damage'],
+            weight=weapon_info['weight'],
+            weapon_class=wclass,
+        )
+        weapons.append(new_weapon)  # Append the weapon instance to the list
+        
+
 #---------------CLOTHES/ARMOR---------------
 #Copy n paste: clothes("",,,,),
 #clothes(name, defense, weight, armor_class, color)
 clothing = [
     clothes("Chain Link Armor", 4, 25, worst_armor),
     clothes("Wizard Cloak", 5, 4, worst_armor),
+    clothes("",0,0,0,),
 ]
 
 
 #---------------STARTER ITEMS---------------
-
-
-
-
 
 
