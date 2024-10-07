@@ -66,7 +66,12 @@ Clothing/Armor classes:
 - Good
 - Best
 - Legendary
-"""
+""" 
+worst_armor = "ARMOR CLASS: Worst"
+bad_armor = "ARMOR CLASS: Bad"
+good_armor = "ARMOR CLASS: Good"
+best_armor = "ARMOR CLASS: Best"
+legendary_armor = "ARMOR CLASS: Legendary"
 
 #---------------CHARACTERS---------------
 #--Main Characters--
@@ -114,7 +119,8 @@ weapons = [
 #Copy n paste: clothes("",,,,),
 #clothes(name, defense, weight, armor_class, color)
 clothing = [
-    clothes(),
+    clothes("Chain Link Armor", 4, 25, worst_armor, "Silver"),
+    clothes("Wizard Cloak", 5, 4, worst_armor, "Dark Purple")
 ]
 
 
