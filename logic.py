@@ -5,6 +5,9 @@ Logic
 By Ann-MarieDev
 ---------------
 """
+#Imports:
+import json
+
 #---------------Test if logic.py is working on main.py---------------
 def test_logic():
     print("logic.py is working")
@@ -46,7 +49,7 @@ class inventory:
     
 #Character Class
 class character:
-    def __init__(self, name, age, health, power, hair_color, skin_color, eye_color, inventory):
+    def __init__(self, name, age, health, power, hair_color, skin_color, eye_color):
         self.name = name
         self.age = age
         self.health = health
@@ -54,7 +57,7 @@ class character:
         self.hair_color = hair_color
         self.skin_color = skin_color
         self.eye_color = eye_color
-        self.inventory = inventory
+#        self.inventory = inventory
         
 #Weapon Class
 class weapon:
@@ -66,7 +69,7 @@ class weapon:
         
 #Clothes/Armor Class
 class clothes:
-    def __init__(self, name, defense, weight, armor_class, color):
+    def __init__(self, name, defense, weight, armor_class):
         self.name = name
         self.defense = defense
         self.weight = weight
@@ -103,7 +106,7 @@ enemy_one = character("Alice", 17, 100, 5, "blonde", "pale", "blue")
 #weapon(Name,  Damage, Weight,  Weapon Class),
 weapons = [
     #---------------Worst---------------
-    weapon("Baloon Sword", 0.5, 0.2, worst_weapon),
+    weapon("Balloon Sword", 0.5, 0.2, worst_weapon),
     weapon("Plastic Sword", 1, 0.5, worst_weapon),
     weapon("Clown Hammer", 0.5, 1, worst_weapon),
     weapon("Broken Pencil", 0, 0.1, worst_weapon),
@@ -127,6 +130,8 @@ weapons = [
     weapon("Legendary Sword", 40, 10, legendary_weapon),
     weapon("Legendary Bow", 45, 10, legendary_weapon)
 ]
+#Use a json file??? Lets try it
+wepon_json = []
 #---------------CLOTHES/ARMOR---------------
 #Copy n paste: clothes("",,,,),
 #clothes(name, defense, weight, armor_class, color)
