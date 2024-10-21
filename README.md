@@ -8,7 +8,7 @@ I’m using this project to learn game mechanics, coding, and problem-solving sk
 
 ---
 <p align="center">
-  🌸🌟✨🎮🐾✨🌟🌸
+  🌸✨🐾
 </p>
 
 <p align="center">
@@ -17,8 +17,4 @@ I’m using this project to learn game mechanics, coding, and problem-solving sk
   <img src="https://img.shields.io/badge/Learning-Game%20Mechanics-blueviolet?style=for-the-badge&logo=book&logoColor=white" /> 
   <img src="https://img.shields.io/badge/Open%20to-Feedback-ff69b4?style=for-the-badge&logo=heart&logoColor=white" />
   <img src="https://img.shields.io/badge/GitHub-Project-0c88c1?style=for-the-badge&logo=github&logoColor=white" />
-</p>
-
-<p align="center">
-  ✨🎨💕🎮🌟✨🌸✨🌟💕
 </p>
