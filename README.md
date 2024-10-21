@@ -12,9 +12,9 @@ I’m using this project to learn game mechanics, coding, and problem-solving sk
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-Text%20Adventure-ff69b4?style=for-the-badge&logo=python&logoColor=white" /> 
-  <img src="https://img.shields.io/badge/First-RPG%20Project-0c88c1?style=for-the-badge&logo=gamepad&logoColor=white" />
-  <img src="https://img.shields.io/badge/Learning-Game%20Mechanics-blueviolet?style=for-the-badge&logo=book&logoColor=white" /> 
-  <img src="https://img.shields.io/badge/Open%20to-Feedback-ff69b4?style=for-the-badge&logo=heart&logoColor=white" />
-  <img src="https://img.shields.io/badge/GitHub-Project-0c88c1?style=for-the-badge&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-Text%20Adventure-ff69b4?style=flat&logo=python&logoColor=white" /> 
+  <img src="https://img.shields.io/badge/First-RPG%20Project-0c88c1?style=flat&logo=gamepad&logoColor=white" />
+  <img src="https://img.shields.io/badge/Learning-Game%20Mechanics-blueviolet?style=flat&logo=book&logoColor=white" /> 
+  <img src="https://img.shields.io/badge/Open%20to-Feedback-ff69b4?style=flat&logo=heart&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub-Project-0c88c1?style=flat&logo=github&logoColor=white" />
 </p>
